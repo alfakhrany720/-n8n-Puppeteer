@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Puppeteer will use this Chromium
+# Install Puppeteer inside n8n
 RUN npm install puppeteer
 
 ENV NODE_ENV=production
